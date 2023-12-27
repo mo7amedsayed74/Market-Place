@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:market_placee/Features/home/presentation/home_screen.dart';
+import 'package:market_placee/Features/home/presentation/views/home.dart';
 
 void main() {
   runApp(const MarketPlace());
