@@ -5,6 +5,13 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return  Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [BottomNavigationBarItem(icon:  ImageIcon(AssetImage(""))),
+          BottomNavigationBarItem(icon: ImageIcon(AssetImage("") )),
+          BottomNavigationBarItem(icon: ImageIcon(AssetImage("") )),
+          BottomNavigationBarItem(icon: ImageIcon(AssetImage(""))),
+              ],),
+    );
   }
 }
