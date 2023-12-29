@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:market_placee/Features/home/presentation/views/home.dart';
 
 void main() {
   runApp(const MarketPlace());
@@ -9,6 +10,11 @@ class MarketPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+     initialRoute:HomeScreen.routName ,
+         routes: {
+          HomeScreen .routName: (context) =>const HomeScreen ()}
+    );
   }
 }
