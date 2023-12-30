@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../Core/utiles/text_style.dart';
 
@@ -17,7 +18,7 @@ class CustomListViewButton extends StatelessWidget {
       minWidth: 25,
       child: Row(children: [
         Icon(icon ,color: Colors.white,size: 10),
-        Text(text,style: AppTextStyle.roboto11.copyWith(fontSize: 9,color: Colors.white),)
+        Text(text,style: AppTextStyle.roboto11.copyWith(fontSize: 9.sp,color: Colors.white),)
 
       ]),
         onPressed: (){});

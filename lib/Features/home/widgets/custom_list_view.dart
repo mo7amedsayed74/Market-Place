@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'listview_item.dart';
 
@@ -13,7 +14,7 @@ class CustomListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListViewItem();
         },
-        separatorBuilder: (context, index) => SizedBox(height: 10,),
+        separatorBuilder: (context, index) => SizedBox(height: 10.h,),
         itemCount: 5,
       ),
     );

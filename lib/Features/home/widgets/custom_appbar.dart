@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
@@ -11,9 +12,9 @@ class CustomAppBar extends StatelessWidget {
         children: [
           Image.asset("assets/images/logo.png"),
           const Spacer(),
-          Image.asset("assets/images/notification.png",height:22 ,width: 22),
+          Image.asset("assets/images/notification.png",height:22.h ,width: 22.w),
           const SizedBox(width: 20,),
-          Image.asset("assets/images/Vector.png",height: 22,width:22)
+          Image.asset("assets/images/Vector.png",height: 22.h,width:22.w)
         ],
       ),
     );

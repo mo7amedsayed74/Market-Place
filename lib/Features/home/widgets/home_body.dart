@@ -21,6 +21,7 @@ class _HomeBodyState extends State<HomeBody> {
     return  Scaffold(
       body: screens[index],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: AppColor.gray,
         unselectedItemColor: AppColor.greyIcon,
         selectedItemColor: AppColor.red,
         currentIndex: index,

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market_placee/Core/utiles/app_color.dart';
 
 import '../../../Core/utiles/text_style.dart';
@@ -18,8 +19,8 @@ class ListViewItem extends StatelessWidget {
           Stack(
             children: [
               Container(
-                  height: 170,
-                  width: 150,
+                  height: 170.h,
+                  width: 150.w,
                   color: AppColor.gray2,
                   ),
               Positioned(
@@ -28,14 +29,14 @@ class ListViewItem extends StatelessWidget {
                   child: Image.asset("assets/images/shert.png"))
             ],
           ),
-          SizedBox(width:20 ,),
+          SizedBox(width:20.w ,),
           Column(mainAxisAlignment: MainAxisAlignment.start,
             children: [
             Row(children: [
               Column(children: [
                 Text("Men shirt",style: AppTextStyle.roboto18,),
                 Text("100 \$ ",style: AppTextStyle.roboto18)]),
-               SizedBox(width: 100),
+               SizedBox(width: 100.w),
               Opacity(opacity: .3,
                   child: Icon(CupertinoIcons.heart))],),
             Opacity(
@@ -49,12 +50,12 @@ class ListViewItem extends StatelessWidget {
 
               ],),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 20.h,),
             Row(children: [
               CustomListViewButton(icon:CupertinoIcons.phone ,text: "Call" ),
-              SizedBox(width: 2,),
+              SizedBox(width: 2.w,),
               CustomListViewButton(icon: CupertinoIcons.chat_bubble_2_fill ,text: "Chat"),
-              SizedBox(width: 2,),
+              SizedBox(width: 2.w,),
               CustomListViewButton(icon: Icons.comment ,text:"Coment" ),
 
             ],)],

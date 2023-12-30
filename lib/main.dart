@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market_placee/Features/home/presentation/views/home.dart';
 
 void main() {
@@ -10,11 +11,16 @@ class MarketPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-     initialRoute:HomeScreen.routName ,
-         routes: {
-          HomeScreen .routName: (context) =>const HomeScreen ()}
+    return ScreenUtilInit(
+      designSize: const Size(414, 736),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+       initialRoute:HomeScreen.routName ,
+           routes: {
+            HomeScreen .routName: (context) =>const HomeScreen ()}
+      ),
     );
   }
 }

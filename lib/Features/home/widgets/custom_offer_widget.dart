@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market_placee/Core/utiles/app_color.dart';
 
 import '../../../Core/utiles/text_style.dart';
@@ -12,8 +13,8 @@ class CustomOfferWidget extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Container(
-            width: 350,
-            height: 160,
+            width: 350.w,
+            height: 160.h,
             decoration: BoxDecoration(
             gradient: LinearGradient(
             begin: Alignment.topLeft,

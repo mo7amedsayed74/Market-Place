@@ -10,14 +10,18 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        CustomAppBar(),
-        CategoriesSection(),
-        SizedBox(height: 20,),
-        CustomOfferWidget(),
-        SizedBox(height: 10,),
-        NewCollectionSection()
+    return  const CustomScrollView(
+      slivers: [
+          SliverToBoxAdapter(child: Column(
+         children: [ CustomAppBar(),
+           CategoriesSection(),
+           SizedBox(height: 20,),
+           CustomOfferWidget(),
+           SizedBox(height: 10,),
+         ],
+          )),
+           SliverToBoxAdapter(child: NewCollectionSection(),)
+
       ],
     );
   }

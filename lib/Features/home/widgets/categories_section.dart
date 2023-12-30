@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market_placee/Core/utiles/app_color.dart';
 import 'package:market_placee/Core/utiles/text_style.dart';
 
@@ -28,7 +29,7 @@ class CategoriesSection extends StatelessWidget {
       child: Row(
       children: [
         Column(children: [
-          Container( width:97, height:97,
+          Container( width:97.w, height:97.h,
             decoration: BoxDecoration(
                 color:AppColor.white ,
                 boxShadow: [
@@ -41,11 +42,11 @@ class CategoriesSection extends StatelessWidget {
                 ],
                 borderRadius: BorderRadius.circular(24),
                 image: const DecorationImage(image:AssetImage("assets/images/dress.png") ))),
-                    SizedBox(height: 10),
+                    SizedBox(height: 10.h),
                     Text("Clothing",style: AppTextStyle.roboto15,)],),
 
-        SizedBox(width: 30),
-        Column(children: [ Container( width:97, height:97,
+        SizedBox(width: 30.w),
+        Column(children: [ Container( width:97.w, height:97.h,
             decoration: BoxDecoration(
                 color:AppColor.white ,
                 boxShadow: [
@@ -60,7 +61,7 @@ class CategoriesSection extends StatelessWidget {
           Text("Jewelly",style: AppTextStyle.roboto15,)]),
 
         SizedBox(width:30 ),
-        Column(children: [Container( width:97, height:97,
+        Column(children: [Container( width:97.w, height:97.h,
             decoration: BoxDecoration(
                 color:AppColor.white,
                 boxShadow: [
@@ -72,7 +73,7 @@ class CategoriesSection extends StatelessWidget {
                   ),
                 ],
                 borderRadius: BorderRadius.circular(24),image: const DecorationImage(image:AssetImage("assets/images/chare.png") ))),
-          SizedBox(height: 10),
+          SizedBox(height: 10.h),
          Text("Furniture",style: AppTextStyle.roboto15,)],)
 
 
