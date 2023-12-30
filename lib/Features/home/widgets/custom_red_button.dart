@@ -8,10 +8,14 @@ class CustomRedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialButton(onPressed: (){},
-      height:30 ,
+    return MaterialButton(
+      onPressed: () {},
+      height: 30,
       color: AppColor.red,
-      child: Text("By Now",style: AppTextStyle.popens13.copyWith(color: Colors.white)),
+      child: Text(
+        "By Now",
+        style: AppTextStyle.popens13.copyWith(color: Colors.white),
+      ),
     );
   }
 }

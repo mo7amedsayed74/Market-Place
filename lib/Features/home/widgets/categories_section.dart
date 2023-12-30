@@ -8,81 +8,118 @@ class CategoriesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-        children: [
-    Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 23, vertical: 20),
-    child: Row(
-    children: [
-    Text("Categories", style: AppTextStyle.roboto18),
-    Spacer(),
-    Text("See all", style: AppTextStyle.roboto18.copyWith(
-    color: AppColor.deepgrey)),
-    Icon(Icons.arrow_forward_ios_outlined, color: AppColor.deepgrey,
-    size: 15,)
-
-    ],
-    ),
-    ),
-    Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
-      child: Row(
       children: [
-        Column(children: [
-          Container( width:97, height:97,
-            decoration: BoxDecoration(
-                color:AppColor.white ,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    spreadRadius: 2,
-                    blurRadius: 3,
-                    offset: Offset(0, 2),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 23, vertical: 20),
+          child: Row(
+            children: [
+              Text("Categories", style: AppTextStyle.roboto18),
+              const Spacer(),
+              Text(
+                "See all",
+                style: AppTextStyle.roboto18.copyWith(color: AppColor.deepgrey),
+              ),
+              Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: AppColor.deepgrey,
+                size: 15,
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                children: [
+                  Container(
+                    width: 97,
+                    height: 97,
+                    decoration: BoxDecoration(
+                      color: AppColor.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 3,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                      borderRadius: BorderRadius.circular(24),
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/dress.png"),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    "Clothing",
+                    style: AppTextStyle.roboto15,
+                  )
+                ],
+              ),
+              Column(
+                children: [
+                  Container(
+                    width: 97,
+                    height: 97,
+                    decoration: BoxDecoration(
+                      color: AppColor.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 3,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                      borderRadius: BorderRadius.circular(24),
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/jewlery.png"),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    "Jewelly",
+                    style: AppTextStyle.roboto15,
                   ),
                 ],
-                borderRadius: BorderRadius.circular(24),
-                image: const DecorationImage(image:AssetImage("assets/images/dress.png") ))),
-                    SizedBox(height: 10),
-                    Text("Clothing",style: AppTextStyle.roboto15,)],),
-
-        SizedBox(width: 30),
-        Column(children: [ Container( width:97, height:97,
-            decoration: BoxDecoration(
-                color:AppColor.white ,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    spreadRadius: 2,
-                    blurRadius: 3,
-                    offset: Offset(0, 2),
+              ),
+              Column(
+                children: [
+                  Container(
+                    width: 97,
+                    height: 97,
+                    decoration: BoxDecoration(
+                      color: AppColor.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 3,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                      borderRadius: BorderRadius.circular(24),
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/chare.png"),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    "Furniture",
+                    style: AppTextStyle.roboto15,
                   ),
                 ],
-                borderRadius: BorderRadius.circular(24),image: const DecorationImage(image:AssetImage("assets/images/jewlery.png") ))),SizedBox(height: 10),
-          Text("Jewelly",style: AppTextStyle.roboto15,)]),
-
-        SizedBox(width:30 ),
-        Column(children: [Container( width:97, height:97,
-            decoration: BoxDecoration(
-                color:AppColor.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    spreadRadius: 2,
-                    blurRadius: 3,
-                    offset: Offset(0, 2),
-                  ),
-                ],
-                borderRadius: BorderRadius.circular(24),image: const DecorationImage(image:AssetImage("assets/images/chare.png") ))),
-          SizedBox(height: 10),
-         Text("Furniture",style: AppTextStyle.roboto15,)],)
-
-
-
-      ]
-      ,
-      ),
-    )
-    ]
-    ,
+              ),
+            ],
+          ),
+        )
+      ],
     );
   }
 }

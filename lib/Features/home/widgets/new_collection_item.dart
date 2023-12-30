@@ -9,25 +9,28 @@ class NewCollectionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-     elevation:4 ,
-     surfaceTintColor: Colors.white,
+      elevation: 4,
+      surfaceTintColor: Colors.white,
       //borderOnForeground: ,
       child: Container(
         height: 200,
-        decoration: BoxDecoration(borderRadius: BorderRadius.zero),
+        decoration: const BoxDecoration(borderRadius: BorderRadius.zero),
         child: Column(
           children: [
             Container(
               width: 130,
               height: 110,
-              decoration: BoxDecoration(
-                image: const DecorationImage(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
                   image: AssetImage("assets/images/4 1.png"),
                 ),
               ),
             ),
-            Text("Sony XB-116 \n 199 EG",style: AppTextStyle.roboto11,),
-            CustomRedButton()
+            Text(
+              "Sony XB-116 \n 199 EG",
+              style: AppTextStyle.roboto11,
+            ),
+            const CustomRedButton()
           ],
         ),
       ),
