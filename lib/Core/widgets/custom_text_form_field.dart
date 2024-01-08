@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-
 class DefaultTextFormField extends StatelessWidget {
   final TextEditingController controller;
   final TextInputType boardType;
-  final String label;
-  final IconData prefix;
+  final String? label;
+  final String? hintText;
+  final IconData? prefix;
   final String? Function(String?)? validate;
   final ValueChanged<String>? onChanged;
+
   //final void Function(String)? onChange;
   final void Function(String)? onSubmit;
   final void Function()? onTap;
@@ -18,8 +19,9 @@ class DefaultTextFormField extends StatelessWidget {
   const DefaultTextFormField({
     super.key,
     required this.controller,
-    required this.label,
-    required this.prefix,
+    this.label,
+    this.hintText,
+    this.prefix,
     this.boardType = TextInputType.text,
     this.validate,
     this.onChanged,
@@ -39,13 +41,12 @@ class DefaultTextFormField extends StatelessWidget {
       onTap: onTap,
       onFieldSubmitted: onSubmit,
       onChanged: onChanged,
-      validator: validate!,
+      validator: validate,
       decoration: InputDecoration(
         //contentPadding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 10.0),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: const BorderSide(color: Colors.grey),
-
         ),
         focusedBorder: OutlineInputBorder(
           //borderSide: BorderSide(color: defaultColor!),
@@ -55,15 +56,13 @@ class DefaultTextFormField extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           //borderSide: BorderSide(color: defaultColor!),
         ),
+
         labelText: label,
         //enabled: false,
-
-        prefixIcon: Icon(
-          prefix,
-          //color: defaultColor,
-        ),
+        hintText: hintText,
+        prefixIcon: prefix != null ? Icon(prefix) : null,
         suffixIcon: suffix != null
-            ? IconButton(onPressed: suffixPressed, icon: Icon(suffix),)
+            ? IconButton(onPressed: suffixPressed, icon: Icon(suffix))
             : null,
       ),
     );

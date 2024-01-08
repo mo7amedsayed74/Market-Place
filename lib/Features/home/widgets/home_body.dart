@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:market_placee/Features/home/presentation/views/sale_screen.dart';
 import 'package:market_placee/Features/home/presentation/views/shop_screen.dart';
 import '../../../Core/utiles/app_color.dart';
 import '../presentation/views/home_screen.dart';
 import '../presentation/views/profile_screen.dart';
+import '../presentation/views/first_sale/first_sale_screen.dart';
 
 class HomeBody extends StatefulWidget {
   const HomeBody({super.key});
@@ -17,7 +17,7 @@ class _HomeBodyState extends State<HomeBody> {
   List<Widget> screens = [
     const HomeScreen(),
     const ShopScreen(),
-    const SaleScreen(),
+    const FirstSaleScreen(),
     const ProfileScreen(),
   ];
 

@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 class AppColor{
-  static Color red=const Color(0xffD90200);
+  static Color red=const Color(0xFFDD0808);
   static Color gray=const Color(0xffbfb3b3);
   static Color deebGray=const Color(0xff969B9B);
   static Color greyIcon=const Color (0xffB3B4B8);

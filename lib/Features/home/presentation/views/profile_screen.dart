@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:market_placee/Core/widgets/custom_button.dart';
-import 'package:market_placee/Features/profile/model/list_tile_model.dart';
-import 'package:market_placee/Features/profile/widget/list_items.dart';
 
 import '../../../../Core/widgets/build_stack_profile.dart';
+import '../list_items.dart';
+import '../list_tile_model.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

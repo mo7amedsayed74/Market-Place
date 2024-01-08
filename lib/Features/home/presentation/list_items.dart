@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:market_placee/Features/profile/model/list_tile_model.dart';
+
+import 'list_tile_model.dart';
 
 class BuildListTileItems extends StatelessWidget {
   final Item item;

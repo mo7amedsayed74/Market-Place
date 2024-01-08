@@ -13,11 +13,11 @@ class CategoriesSection extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 23, vertical: 20),
           child: Row(
             children: [
-              Text("Categories", style: AppTextStyle.roboto18),
+              Text("Categories", style: AppTextStyle.roboto20),
               const Spacer(),
               Text(
                 "See all",
-                style: AppTextStyle.roboto18.copyWith(color: AppColor.deepgrey),
+                style: AppTextStyle.roboto20.copyWith(color: AppColor.deepgrey),
               ),
               Icon(
                 Icons.arrow_forward_ios_outlined,
@@ -30,7 +30,7 @@ class CategoriesSection extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 children: [
@@ -56,7 +56,7 @@ class CategoriesSection extends StatelessWidget {
                   const SizedBox(height: 10),
                   Text(
                     "Clothing",
-                    style: AppTextStyle.roboto15,
+                    style: AppTextStyle.roboto16,
                   )
                 ],
               ),
@@ -84,7 +84,7 @@ class CategoriesSection extends StatelessWidget {
                   const SizedBox(height: 10),
                   Text(
                     "Jewelly",
-                    style: AppTextStyle.roboto15,
+                    style: AppTextStyle.roboto16,
                   ),
                 ],
               ),
@@ -112,7 +112,7 @@ class CategoriesSection extends StatelessWidget {
                   const SizedBox(height: 10),
                   Text(
                     "Furniture",
-                    style: AppTextStyle.roboto15,
+                    style: AppTextStyle.roboto16,
                   ),
                 ],
               ),

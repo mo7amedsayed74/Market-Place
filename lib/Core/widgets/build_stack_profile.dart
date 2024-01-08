@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:market_placee/Core/widgets/profile_photo.dart';
+import 'package:market_placee/Features/home/widgets/custom_appbar.dart';
 
 class ProfileStack extends StatelessWidget {
   final String? photo;
+
   const ProfileStack({super.key, this.photo});
 
   @override
@@ -27,17 +29,30 @@ class ProfileStack extends StatelessWidget {
           bottom: 0,
           left: 0,
           right: 0,
-          child: photo==null ? Stack(
-            alignment: Alignment.center,
-            children: [
-              Image.asset('assets/images/profilee.png'),
-              Positioned(
-                child: Image.asset('assets/images/Profile.png',),
-              ),
-            ],
-          ): ProfilePhoto(photo: photo!),
+          child: photo == null
+              ? Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Image.asset('assets/images/profilee.png'),
+                    Positioned(
+                      child: Image.asset(
+                        'assets/images/Profile.png',
+                      ),
+                    ),
+                  ],
+                )
+              : ProfilePhoto(photo: photo!),
         ),
-        Positioned(
+        const CustomAppBar(),
+      ],
+    );
+  }
+}
+
+
+
+/*
+Positioned(
           top: 0,
           right: 5,
           child: IconButton(
@@ -68,7 +83,4 @@ class ProfileStack extends StatelessWidget {
             ],
           ),
         ),
-      ],
-    );
-  }
-}
+ */

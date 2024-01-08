@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../Core/widgets/logo_with_backIcon.dart';
+
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
 
@@ -8,13 +10,13 @@ class CustomAppBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(
         left: 12,
-        right: 30,
+        right: 12,
         bottom: 5,
         top: 8,
       ),
       child: Row(
         children: [
-          Image.asset("assets/images/logo.png"),
+          const LogoWithBackIcon(),
           const Spacer(),
           Image.asset(
             "assets/images/notification.png",

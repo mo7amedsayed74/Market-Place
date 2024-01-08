@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../Core/utiles/app_color.dart';
@@ -21,11 +20,11 @@ class NewCollectionSection extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Text("New Collection", style: AppTextStyle.roboto18),
+              Text("New Collection", style: AppTextStyle.roboto20),
               const Spacer(),
               Text(
                 "See all",
-                style: AppTextStyle.roboto18.copyWith(color: AppColor.deepgrey),
+                style: AppTextStyle.roboto20.copyWith(color: AppColor.deepgrey),
               ),
               Icon(
                 Icons.arrow_forward_ios_outlined,
