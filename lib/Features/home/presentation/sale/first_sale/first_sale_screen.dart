@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:market_placee/Features/home/presentation/views/first_sale/build_Choose_row.dart';
-import 'package:market_placee/Features/home/presentation/views/first_sale/build_create_row.dart';
-import 'package:market_placee/Features/home/presentation/views/first_sale/build_items.dart';
+import 'package:market_placee/Features/home/presentation/sale/first_sale/build_Choose_row.dart';
+import 'package:market_placee/Features/home/presentation/sale/first_sale/build_create_row.dart';
+import 'package:market_placee/Features/home/presentation/sale/first_sale/build_items.dart';
 import 'package:market_placee/Features/home/widgets/custom_appbar.dart';
 
 class FirstSaleScreen extends StatelessWidget {

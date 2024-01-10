@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:market_placee/Features/home/widgets/categories_section.dart';
 import 'package:market_placee/Features/home/widgets/custom_appbar.dart';
 import 'package:market_placee/Features/home/widgets/custom_offer_widget.dart';
-
-import '../../widgets/categories_section.dart';
-import '../../widgets/new_collection_section.dart';
+import 'package:market_placee/Features/home/widgets/new_collection_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

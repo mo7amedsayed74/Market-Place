@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:market_placee/Features/home/presentation/views/home.dart';
+import 'package:market_placee/Features/home/presentation/home.dart';
 
 void main() {
   runApp(const MarketPlace());

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:market_placee/Features/home/presentation/views/shop_screen.dart';
-import '../../../Core/utiles/app_color.dart';
-import '../presentation/views/home_screen.dart';
-import '../presentation/views/profile_screen.dart';
-import '../presentation/views/first_sale/first_sale_screen.dart';
+import 'package:market_placee/Core/utiles/app_color.dart';
+import 'package:market_placee/Features/home/presentation/home.dart';
+import 'package:market_placee/Features/home/presentation/profile/profile_screen.dart';
+import 'package:market_placee/Features/home/presentation/sale/first_sale/first_sale_screen.dart';
+import 'package:market_placee/Features/home/presentation/shop/shop_screen.dart';
 
 class HomeBody extends StatefulWidget {
   const HomeBody({super.key});

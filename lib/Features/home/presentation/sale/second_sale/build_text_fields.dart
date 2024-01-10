@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../Core/widgets/custom_text_form_field.dart';
+import 'package:market_placee/Core/widgets/custom_text_form_field.dart';
 
 class BuildTextFields extends StatelessWidget {
   BuildTextFields({super.key});
