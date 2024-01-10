@@ -1,6 +1,5 @@
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BackRowWidget extends StatelessWidget {
   const BackRowWidget({super.key});
@@ -27,7 +26,9 @@ class BackRowWidget extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             IconButton(
-                icon: const Icon(FontAwesomeIcons.heart), onPressed: () {}),
+              icon: const Icon(FontAwesomeIcons.heart),
+              onPressed: () {},
+            ),
             const SizedBox(width: 10),
             const Icon(Icons.more_vert),
           ],

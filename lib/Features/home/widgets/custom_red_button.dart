@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../Core/utiles/app_color.dart';
-import '../../../Core/utiles/text_style.dart';
+import 'package:market_placee/Core/utiles/app_color.dart';
+import 'package:market_placee/Core/utiles/text_style.dart';
 
 class CustomRedButton extends StatelessWidget {
   const CustomRedButton({super.key});
